@@ -64,7 +64,16 @@ public class SelectStudent extends AppCompatActivity implements View.OnClickList
         c11.setOnClickListener(this);
         c12.setOnClickListener(this);
 
-        all.setOnClickListener(this);
+        all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(SelectStudent.this, ListLoader.class);
+                intent2.putExtra("user", strName);
+                intent2.putExtra("year", year);
+                intent2.putExtra("student", ""+69);
+                startActivity(intent2);
+            }
+        });
 
     }
 
@@ -125,9 +134,6 @@ public class SelectStudent extends AppCompatActivity implements View.OnClickList
                 intent.putExtra("student", ""+12);
                 break;
 
-            case R.id.bAll:
-                intent.putExtra("student", ""+69);
-                break;
         }
 
         startActivity(intent);

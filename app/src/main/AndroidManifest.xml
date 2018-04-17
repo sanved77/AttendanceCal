@@ -23,6 +23,7 @@
         <activity android:name=".SeeAttendance"></activity>
         <activity android:name=".SelectStudent"></activity>
         <activity android:name=".EnterAttendance"></activity>
+        <activity android:name=".ListLoader"></activity>
     </application>
 
 </manifest>
