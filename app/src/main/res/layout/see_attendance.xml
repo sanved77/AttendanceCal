@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Select Year to see Attendance"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bYear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Year 1 (2016)"
+        android:textStyle="bold"
+        android:theme="@style/AppTheme.Button" />
+
+    <Button
+        android:id="@+id/bYear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Year 2 (2017)"
+        android:textStyle="bold"
+        android:theme="@style/AppTheme.Button" />
+
+    <Button
+        android:id="@+id/bYear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Year 3 (2018)"
+        android:textStyle="bold"
+        android:theme="@style/AppTheme.Button" />
+
+</LinearLayout>
